@@ -1,7 +1,7 @@
 
 import './App.css';
 import Coin from './Components/Coin/Coin';
-import CoinFlip from './Components/Coin/CoinFlip/CoinFlip';
+import CoinFlip from './Components/CoinFlip/CoinFlip';
 
 function App() {
 

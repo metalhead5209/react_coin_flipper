@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { choice } from "helpers"; 
+import { choice } from '../.././helper'
 
 class CoinFlip extends Component {
     static defaultProps = {
@@ -19,7 +19,21 @@ class CoinFlip extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
     flipCoin() {
-        
+        const newCoin = choice(this.props.coins);
+        this.setState(st => {
+            let newState = {
+                ...st,
+                currCoin: newCoin,
+                nFlips: st.nFlips + 1
+            }
+            if(newCoin.side === 'heads'){
+                //add one to nHeads
+                newState.nHeads += 1;
+            } else {
+                newState.nTails += 1;
+            }
+            return newState;
+        })
     }
 
     handleClick(e) {

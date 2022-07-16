@@ -4,11 +4,14 @@ import './Coin.css';
 
 class Coin extends Component {
     render() {
-        // return <div className="Coin"><img src="https://tinyurl.com/react-coin-heads-jpg" alt="heads" />
-
-        // <img src="https://www.usmint.gov/wordpress/wp-content/uploads/2022/01/2022-kennedy-half-dollar-proof-reverse-300x300.jpg" alt="tails" />
-        // </div>
+        return (
+            <div className='Coin'>
+                <img className='Coin' src={this.props.info.imgSrc} alt={this.props.info.side} />
+            </div>
+        
+        )
     }
+
 }
 
 export default Coin;

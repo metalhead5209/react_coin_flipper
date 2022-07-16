@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { choice } from '../.././helper';
 import Coin from '../Coin/Coin';
+import './CoinFlip.css';
 
 
 class CoinFlip extends Component {

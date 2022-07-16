@@ -1,0 +1,8 @@
+.CoinFlip button {
+    padding: 1.2em;
+    border-radius: 10px;
+    width: 8em;
+    box-shadow: rgba(247, 247, 247, 0.35) 0px 5px 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(253, 253, 253)
+}
